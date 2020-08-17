@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/bg-01.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.video-container:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+video {
+  position: fixed;
+  z-index: -2;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.wrapper {
+  width: 300px;
+  right: 2rem;
+  top: 2rem;
+  position: absolute;
+}
+
+.wrapper img {
+  width: 200px;
+}
+
+.wrapper .proklamasi {
+  font-family: consolas;
+}
+
+.wrapper .proklamasi p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.wrapper .proklamasi h3 {
+  font-family: consolas;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center !important;
+  }
+}
+
+.layer {
+  width: 100%;
+  height: 100vh;
+}
+
+.soekarno {
+  -webkit-transform: scale(1.035);
+          transform: scale(1.035);
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.mic {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+/*# sourceMappingURL=style.css.map */

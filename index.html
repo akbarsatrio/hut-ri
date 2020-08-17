@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HUT RI ke-75</title>
+	<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="video-container">
+			<video autoplay muted loop>
+				<source src="src/vid/vid.mp4" type="video/mp4">
+			</video>
+			<audio autoplay src="src/audio/prok.mp3"></audio>
+		</div>
+		<div class="wrapper">
+			<div class="hut-logo">
+				<img src="src/img/75.svg">
+			</div>
+			<div class="proklamasi">
+				<strong><h3>Proklamasi</h3></strong>
+				<p>
+					Kami bangsa Indonesia, dengan ini menjatakan kemerdekaan Indonesia. Hal-hal jang mengenai pemindahan kekoeasaan d.l.l., diselenggarakan dengan tjara seksama dan dalam tempo jang sesingkat-singkatnja.<br><br>
+					Djakarta, hari 17 boelan 8 tahoen '05
+					<br><br>
+					Atas nama bangsa Indonesia.Soekarno/Hatta.
+				</p>
+			</div>
+		</div>
+		<div id="scene">
+			<div class="layer" data-depth=".1">
+				<img src="src/img/soekarno.png" class="soekarno">
+			</div>
+			<div class="layer" data-depth=".5">
+				<img src="src/img/mic.png" class="mic">
+			</div>
+		</div>
+	</div>
+	<script src="src/js/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
